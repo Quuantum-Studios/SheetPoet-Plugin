@@ -4,7 +4,7 @@
  * Plugin Name: SheetPoet – Spreadsheet Connector
  * Plugin URI: https://www.quuantum.com/products/sheetpoet/
  * Description: A powerful plugin that connects your WordPress site to a companion Google Sheets Add-on for seamless data processing, automation, and synchronization.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Quuantum
  * Author URI: https://www.quuantum.com
  * Text Domain: sheetpoet
@@ -34,7 +34,7 @@ if ( ! class_exists('SPGS_Main') ) {
          *
          * @var string
          */
-        private $version = '1.0.2';
+        private $version = '1.0.3';
 
         /**
          * Constructor - Private to prevent direct instantiation
