@@ -1,0 +1,23 @@
+{
+    "require": {
+        "nikic/php-parser": "^5.4"
+    },
+    "scripts": {
+        "build": [
+            "Composer\\Config::disableProcessTimeout",
+            "./build-plugin.sh ${PLUGIN_VERSION} . prod"
+        ],
+        "build:wporg": [
+            "Composer\\Config::disableProcessTimeout",
+            "./build-plugin.sh ${PLUGIN_VERSION} . dev"
+        ],
+        "build:dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "./build-plugin.sh ${PLUGIN_VERSION} . dev"
+        ],
+        "build:clean": "./build-plugin.sh --clean"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}

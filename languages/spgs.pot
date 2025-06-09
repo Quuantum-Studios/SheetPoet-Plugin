@@ -1,0 +1,43 @@
+# Copyright (C) 2024 Quuantum
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: SheetPoet – Spreadsheet Connector 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/spgs\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-02-20T12:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: spgs\n"
+
+#: includes/admin/menu.php:28
+msgid "SheetPoet – Spreadsheet Connector"
+msgstr ""
+
+#: includes/admin/menu.php:29
+msgid "SheetPoet"
+msgstr ""
+
+#: includes/admin/menu.php:53
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/menu.php:65
+msgid "Documentation"
+msgstr ""
+
+#: includes/admin/backend/src/App.tsx:9
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/backend/src/App.tsx:10
+msgid "Functions"
+msgstr ""
+
+#: includes/admin/backend/src/App.tsx:11
+msgid "Logs"
+msgstr ""
