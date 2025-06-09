@@ -105,7 +105,11 @@ class SPGS_Functions_Model
                 include_once $temp_file;
 
                 // Delete the temporary file
-                @unlink($temp_file);
+                if ( function_exists('wp_delete_file') ) {
+                    wp_delete_file($temp_file);
+                } else {
+                    @unlink($temp_file);
+                }
 
                 if ( ! function_exists($function_name) ) {
                     throw new Exception("Function {$function_name} could not be created");
