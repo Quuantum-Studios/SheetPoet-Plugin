@@ -3,13 +3,13 @@
         "nikic/php-parser": "^5.4"
     },
     "scripts": {
+        "make-public": [
+            "Composer\\Config::disableProcessTimeout",
+            "./make-public.sh"
+        ],
         "build": [
             "Composer\\Config::disableProcessTimeout",
             "./build-plugin.sh ${PLUGIN_VERSION} . prod"
-        ],
-        "build:wporg": [
-            "Composer\\Config::disableProcessTimeout",
-            "./build-plugin.sh ${PLUGIN_VERSION} . dev"
         ],
         "build:dev": [
             "Composer\\Config::disableProcessTimeout",
