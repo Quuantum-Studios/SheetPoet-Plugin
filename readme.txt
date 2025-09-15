@@ -3,7 +3,7 @@ Contributors: quuantum
 Tags: google sheets, functions, data processing, automation
 Requires at least: 5.9
 Tested up to: 6.8
-Stable tag: 1.0.0
+Stable tag: 1.0.4
 Requires PHP: 7.3
 Donate link: https://www.quuantum.com
 License: GPL-2.0+
@@ -17,8 +17,9 @@ A powerful plugin that connects your WordPress site to a companion Google Sheets
 
 ### Features
 
-* Works with the official **SheetPoet** extension for Google Sheets
-* Create and manage custom PHP functions via admin UI
+* Works with the official **SheetPoet** Google Sheets addon
+* Register PHP functions with simple filters and actions
+* Manage custom PHP functions via admin UI
 * 3 function types:
   - **Import to Sheet**: Fetch data from WordPress and populate your spreadsheet
   - **Upload to Website**: Send spreadsheet rows to WordPress for processing
@@ -32,7 +33,7 @@ A powerful plugin that connects your WordPress site to a companion Google Sheets
 1. **Install and Activate the Plugin:** Install **SheetPoet** on your WordPress site.
 2. **Configure API:** Generate your secure API key under 'SheetPoet > Settings'.
 3. **Install the Sheets Add-on:** Install the SheetPoet Add-on in your Google Sheet.
-4. **Create Functions:** Use the admin interface to define your processing logic in PHP.
+4. **Create Functions:** Create PHP functions in your theme or plugin using filter and define your processing logic in PHP functions. Use the admin interface to register your PHP functions.
 5. **Trigger from Sheets:** Use the Add-on interface to trigger your custom functions and exchange data with WordPress.
 
 #### Contribute
@@ -67,7 +68,7 @@ For questions or issues, visit the [support forums](https://wordpress.org/suppor
 1. Upload the `sheetpoet` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin from your WordPress dashboard.
 3. Visit ‘SheetPoet > Settings’ to configure your API key.
-4. Visit ‘SheetPoet > Functions’ to add custom functions.
+4. Visit ‘SheetPoet > Functions’ to register your custom functions.
 5. Install the **SheetPoet** Add-on in your Google Sheet.
 6. Start syncing data between Sheets and WordPress!
 
@@ -86,17 +87,27 @@ You can create three types:
 Yes, your PHP functions can return data back to Sheets as arrays or string, which is handled by the Add-on.
 
 = Is it safe to run PHP from Sheets? =
-Yes. Each function is validated and sanitized, and only accessible via authenticated API calls.
+Yes. Each function is validated, and only accessible via authenticated API calls.
 
 == Screenshots ==
 
 1. Settings page with API configuration
 2. Function management interface
-3. Function editor with validation and syntax highlighting
+3. Function editor for registering a function
 4. Execution logs and debug panel
 5. Log details view
 
 == Changelog ==
+
+= 1.0.4 =
+Release Date: Sep 15, 2025
+
+* Updated plugin info and docs
+
+= 1.0.3 =
+Release Date: Sep 15, 2025
+
+* Minor bugfixes and updates	
 
 = 1.0.0 =
 Release Date: May 10, 2025
