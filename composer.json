@@ -1,0 +1,20 @@
+{
+    "scripts": {
+        "make-public": [
+            "Composer\\Config::disableProcessTimeout",
+            "./make-public.sh"
+        ],
+        "build": [
+            "Composer\\Config::disableProcessTimeout",
+            "./build-plugin.sh ${PLUGIN_VERSION} . prod"
+        ],
+        "build:dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "./build-plugin.sh ${PLUGIN_VERSION} . dev"
+        ],
+        "build:clean": "./build-plugin.sh --clean"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}

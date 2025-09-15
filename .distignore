@@ -1,0 +1,46 @@
+# WordPress.org distribution exclusions
+/.wordpress-org
+/.git
+/.github
+/docs
+/includes/admin/backend
+
+# Development files
+_config.yml
+.distignore
+.editorconfig
+.gitignore
+CHANGELOG.md
+phpcs.xml
+README.md
+LICENSE
+todo
+build-plugin.sh
+
+# Dependencies
+/node_modules
+
+# Package management files
+composer.json
+composer.lock
+package.json
+package-lock.json
+yarn.lock
+
+# Build artifacts
+*.zip
+/dist
+/build
+
+# Environment files
+.env
+.env.*
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
